@@ -19,5 +19,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/addMoney',[UserController::class, 'addMoney']);
-Route::post('/buyCookie',[UserController::class, 'buyCookie']);
+Route::post('/register', [UserController::class, 'register']);
+Route::post('/login', [UserController::class, 'login']);
+
+
+Route::group(['middleware' => ['web','auth:api']], function()
+{
+    Route::post('/addMoney',[UserController::class, 'addMoney']);
+    Route::post('/buyCookie',[UserController::class, 'buyCookie']);
+    Route::post('/logout', [UserController::class, 'logout']);
+
+});
+
+

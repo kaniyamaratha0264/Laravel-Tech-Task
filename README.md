@@ -32,9 +32,15 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 API Endpoint : 
 
-1. For adding money to wallet : 
+1. Register User : 
+    => http://127.0.0.1:8000/api/register
+2. Login User : 
+    => http://127.0.0.1:8000/api/login
+3. Logout User : 
+    => http://127.0.0.1:8000/api/logout
+4. For adding money to wallet : 
     => http://127.0.0.1:8000/api/addMoney
-2. For buy cookie : 
+5. For buy cookie : 
     => http://127.0.0.1:8000/api/buyCookie
 
 PHP version : 7.4.23

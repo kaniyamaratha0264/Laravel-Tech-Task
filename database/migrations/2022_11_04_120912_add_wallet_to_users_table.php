@@ -15,6 +15,7 @@ class AddWalletToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->decimal('wallet', 5,2)->after('email');
+            $table->string('role')->after('email');
         });
     }
 
@@ -27,6 +28,7 @@ class AddWalletToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropColumn('wallet');
+            $table->dropColumn('role');
         });
     }
 }
