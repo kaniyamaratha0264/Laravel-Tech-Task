@@ -8,6 +8,16 @@
 		{
 			"name": "AddMoney",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWE4ZmZjZGFmNGY5Y2M4ODJkZGMwZTUzYmM3OGZjZGY2ZTlhZGQ5ZDI2OTI1NGM1MTYwOGMwMmQyMWViMThlZGJjYmRmMDE4NGNhN2ViN2UiLCJpYXQiOjE2Njc4MTc0ODAuOTE0ODUsIm5iZiI6MTY2NzgxNzQ4MC45MTQ4NTQsImV4cCI6MTY5OTM1MzQ4MC44MzI4MTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.c2vLsce8_ON1JY7RIMgKKka1Ah4ZnuBNnxqZB0qHsYEp7cc4j580EXUF01kvhbwpmIDuqL6E67POivX92A3HX_JUGewT4lXbiKnanT7mQAl_a3Zyxi8jnadRxH5CrkHc2IHTeUs3iUjI1u5xfJyTmuCsSGRodKfGLAfn6zK4ZKpUum0Z1olHy6DEgMvuGiWvExviVKEnkFBoQpqK4mbQCwi4gMKf8qjVR3EawJ4Mg5UU_jSlrnksQkRqQC3i2R21pnZczHE94HN_5hwmn1aUzCB6WWP-Qxjc2ObgAe1_zpSQpQ2zTc7WsTmOD3VQwfRlbpAI0pMY1b18sZV205fdBya7GzGX2SrW4_OceZJfroEZyDOzh0o_ukN87MTPganLOaxDHeGExtIkEI-nCDqzbQJqqNjTpGtmbMX9g7e5pAitbIf4vc6qVSJatiHIepP5w3yWEyzXVx2c9TOUN9sfuyWp2qU7fwxmkeqWJ7vcRNCONtVU46_haE2vbQ_0Sb0lfL6e8SetBLpWTom0hQE5v5yU0sUDT3YpLwlGB8Rh1JIQIcpjZlZNQPddRKCx3iVxIHadtiF9G89V3B7OCqvaZAvXPE-B1KR52yCrOlznJEkZ92Dm4bdMZ7QKYmT_BZKUSfiwKXSGU2WutTS7zpjq6pcRgMwtg8BQkQnHyr5oaAA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -23,7 +33,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"wallet\" : 50\r\n}",
+					"raw": "{\r\n    \"wallet\" : 10\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -51,17 +61,32 @@
 		{
 			"name": "BuyCookie",
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMWE4ZmZjZGFmNGY5Y2M4ODJkZGMwZTUzYmM3OGZjZGY2ZTlhZGQ5ZDI2OTI1NGM1MTYwOGMwMmQyMWViMThlZGJjYmRmMDE4NGNhN2ViN2UiLCJpYXQiOjE2Njc4MTc0ODAuOTE0ODUsIm5iZiI6MTY2NzgxNzQ4MC45MTQ4NTQsImV4cCI6MTY5OTM1MzQ4MC44MzI4MTgsInN1YiI6IjEiLCJzY29wZXMiOltdfQ.c2vLsce8_ON1JY7RIMgKKka1Ah4ZnuBNnxqZB0qHsYEp7cc4j580EXUF01kvhbwpmIDuqL6E67POivX92A3HX_JUGewT4lXbiKnanT7mQAl_a3Zyxi8jnadRxH5CrkHc2IHTeUs3iUjI1u5xfJyTmuCsSGRodKfGLAfn6zK4ZKpUum0Z1olHy6DEgMvuGiWvExviVKEnkFBoQpqK4mbQCwi4gMKf8qjVR3EawJ4Mg5UU_jSlrnksQkRqQC3i2R21pnZczHE94HN_5hwmn1aUzCB6WWP-Qxjc2ObgAe1_zpSQpQ2zTc7WsTmOD3VQwfRlbpAI0pMY1b18sZV205fdBya7GzGX2SrW4_OceZJfroEZyDOzh0o_ukN87MTPganLOaxDHeGExtIkEI-nCDqzbQJqqNjTpGtmbMX9g7e5pAitbIf4vc6qVSJatiHIepP5w3yWEyzXVx2c9TOUN9sfuyWp2qU7fwxmkeqWJ7vcRNCONtVU46_haE2vbQ_0Sb0lfL6e8SetBLpWTom0hQE5v5yU0sUDT3YpLwlGB8Rh1JIQIcpjZlZNQPddRKCx3iVxIHadtiF9G89V3B7OCqvaZAvXPE-B1KR52yCrOlznJEkZ92Dm4bdMZ7QKYmT_BZKUSfiwKXSGU2WutTS7zpjq6pcRgMwtg8BQkQnHyr5oaAA",
+							"type": "string"
+						}
+					]
+				},
 				"method": "POST",
 				"header": [
 					{
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "default"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cookie\" : 10\r\n}",
+					"raw": "{\r\n    \"cookie\" : 5\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -81,6 +106,118 @@
 					"path": [
 						"api",
 						"buyCookie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"test\",\r\n    \"email\":\"test1@gmail.com\",\r\n    \"password\":123456,\r\n    \"password_confirmation\":123456,\r\n    \"wallet\":0,\r\n    \"role\" : \"isUser\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"test1@gmail.com\",\r\n    \"password\":123456\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzk2Y2RhYTJkYjFjN2YxMzhiMDlmOWFiMDc1NDYyNTRiZWQ1NjUzNGY0MGIzZDBhZTU1NjlhM2ZkZWFiM2U0YzRjZDMxNzE4NDU5NmQxMWMiLCJpYXQiOjE2Njc4MTM3NzkuNDA2MywibmJmIjoxNjY3ODEzNzc5LjQwNjMwNCwiZXhwIjoxNjk5MzQ5Nzc5LjM1MzM0MSwic3ViIjoiMyIsInNjb3BlcyI6W119.cplKABatOBG2cuWKh2PrDh0co3tCmIN6fNvO_Yw3-mUaZLPhPhClSf1vJnSrGQ_JcJnFMDDlrhiWOpV2FBNGl7wZZKT8QZSe1BOlRH6LqUqI6Afm46w_yo3IMgnUG-cDYR7JsSPaGhnxY1S5bxw9DhryQt2li-3rcvZx53l7cF0zWjp1Tx6FGd_luvEIe0earK_U3PuHbDxGrK_e1_OksnlFoKvS6watyySxcXiyvbYhfhE8WapIQ6lzZvhyGmzqyfBzDknSad-0ujX-x4LHL8oOmTn7a8ILxCBWdxUYk5uFrEifyOtHgOYIdZQwJTccUaTYDmMiFBu4SfzavxK5EbxJap-HOJmu2oPKBnzsJkq74Ui299gSMMf_xhLP12RccOKyDd1SWpaWyBWhJ42956Xmhn0_tpd4zbsKOqN8OWWlW8KLMTp8ajcx4fW8mnrmNxfKK2Lcuk2VodEzQCW6-4ebTXTJsOqWLqSLwKEEVYHRuqyRRficSZzx5_2ZIRYVRgc8fynx-St83yXABSnC_2AE7AWSIf8QSb1tc0UvPA7796O7hGMl7opLZxRpXECzofQvoxKu1mpmmx7lamlnenlGbp-isnmDnEiT_Ct_5XqNMvnwVp97lj4T9NZsQ8nP47p7ExsMFGsKghZnYEvrcB9rmzQqsWHEsvkbSDXF0IE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout"
 					]
 				}
 			},
