@@ -27,8 +27,9 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 2. Copy .env.example file to .env file
 3. Run Composer install command
 4. Run "php artisan migrate" for running migration.
-5. serve project by running "php artisan serve"
-6. Import postman collection which is inside "Postman collection & DB" folder.
+5. Run "php artisan passport:install" for passport installation.
+6. serve project by running "php artisan serve"
+7. Import postman collection which is inside "Postman collection & DB" folder.
 
 API Endpoint : 
 
